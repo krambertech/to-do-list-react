@@ -1,0 +1,14 @@
+.task {
+	min-height: 30px;
+	border: 1px;
+	font-family: arial;
+	width: calc( 100% - 10px);
+	border-top: 1px #000000 solid;
+	padding-top: 7px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+.task--done {
+	color: #bbbbbb;
+	text-decoration: line-through;
+}

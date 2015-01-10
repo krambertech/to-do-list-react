@@ -1,0 +1,23 @@
+{
+	"name": "helloworld",
+	"version": "0.0.1",
+	"repository": "",
+	"dependencies": {
+		"react": "*",
+		"jquery": "*"
+	},
+	"devDependencies": {
+		"jsx-loader": "*",
+		"webpack": "*",
+		"url-loader": "*",
+		"css-loader": "*",
+		"jshint-loader": "*",
+		"less-loader": "*",
+		"style-loader": "*",
+		"traceur-loader": "0.5.*",
+		"json-loader": "*"
+	},
+	"scripts": {
+		"start": "webpack -d --watch --colors src/main.js"
+	}
+}
