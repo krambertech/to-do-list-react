@@ -1,2 +1,2 @@
-# helloworld
-just a simple hello word application, my first repository
+# to-do-list
+Simple to do application written on react.js
