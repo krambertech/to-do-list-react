@@ -1,7 +1,7 @@
 "use strict";
 var React = require("react");
 var Task = require("./task.jsx");
-var AddTask = require("./addtask.jsx");
+var TaskEditor = require("./taskeditor.jsx");
 require("./todolist.css");
 
 var ToDoList = React.createClass({
@@ -10,13 +10,6 @@ var ToDoList = React.createClass({
 		return {
 			tasks: []
 		};
-	},
-
-	componentDidMount: function() {
-		var tasks = this.state.tasks;
-		tasks.push(<Task name="To meet Johanna" isActive={true}/>);
-		tasks.push(<Task name="To buy milk" isActive={false}/>);
-		this.forceUpdate();
 	},
 
 	addTask: function(taskText) {
@@ -28,7 +21,7 @@ var ToDoList = React.createClass({
 	render: function() {
 		return (<div className="todo-list">
 					{this.state.tasks}
-					<AddTask addTask={this.addTask}/>
+					<TaskEditor addTask={this.addTask}/>
 				</div>);
 	}
 });
